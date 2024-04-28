@@ -1,12 +1,52 @@
-
-
-
-
-
-ul{
-    display: block;
+.here-box {
+  color: var(--background-color);
+  opacity: 1;
+  transform: rotate(90deg);
+  position: absolute;
 }
 
-li{
-    opacity: 0;
+.menu-box {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  width: 500px;
+  position: fixed;
+  height: 1500px;
+  top: 80;
+  left: -350px;
+  padding-top: 30%;
+  padding-right: 30px;
+  transition-property: transform;
+  transition-duration: 1s;
+  background-color: gray;
 }
+
+.box-title{
+    color: aliceblue;
+}
+
+.menu-box:hover {
+  transform: translate(200px);
+}
+
+.menu-box:hover .here-box {
+  opacity: 0;
+}
+
+.menu-box:hover .box {
+  opacity: 1;
+}
+
+.box {
+  position: fixed;
+  opacity: 0;
+}
+
+.box-item{
+    color: aliceblue;
+}
+
+.box-item:hover{
+   color: rgb(241, 144, 74);
+}
+
